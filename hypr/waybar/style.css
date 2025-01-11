@@ -1,0 +1,90 @@
+@define-color accent #383838;
+@define-color text #f8f8f8;
+@define-color invText #f8f8f8;
+/* text when background is accent */
+@define-color bg #181818;
+
+/* @import "./wal.css";
+@define-color accent @color5;
+@define-color bg @background;
+@define-color text @foreground; */
+
+@import "base16/base16-black-metal-venom.css";
+
+@define-color accent @base01;
+@define-color text @base07;
+@define-color invText @base07;
+/* text when background is accent */
+@define-color bg @base00;
+
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 14px;
+  border-radius: 0px;
+  /* :[ */
+  min-height: 0px;
+}
+
+window#waybar {
+  background-color: @accent;
+  color: @text;
+  opacity: 1;
+}
+
+#workspaces {
+  background-color: transparent;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  color: @text;
+}
+
+#workspaces button.active {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+}
+
+#battery {
+  background-color: transparent;
+  font-weight: bold;
+  color: #40ff9e;
+  margin: 0px;
+  padding-right: 10px;
+}
+
+#pulseaudio,
+#cpu,
+#memory,
+#temperature,
+#clock,
+#tray,
+#custom-icon {
+  background-color: transparent;
+  font-weight: bold;
+  color: @text;
+  margin: 0px;
+}
+
+.modules-left {
+  background-color: @bg;
+  font-weight: bold;
+  padding: 0px 0px 0px 0px;
+}
+
+.modules-center {
+  background-color: @bg;
+  padding: 0px 0px 0px 0px;
+}
+
+#window {
+  color: @invText;
+  background-color: @accent;
+  padding-left: 4px;
+}
+
+.modules-right {
+  background-color: @bg;
+  padding: 0px 0px 0px 0px;
+}

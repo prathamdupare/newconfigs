@@ -1,0 +1,38 @@
+* {
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#workspaces button.active {
+  background-color: skyblue;
+  color: black;
+}
+
+/* Module Styling */
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#bluetooth,
+#temperature,
+#custom-cycle_wall,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-power,
+#custom-updates,
+#custom-obsidian,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#mpd {
+  padding: 0 12px;
+  background-color: black;
+  color: white;
+  border-radius: 15px;
+  margin: 5px 0;
+}
